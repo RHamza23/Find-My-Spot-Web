@@ -1,0 +1,168 @@
+{
+    "eng" : {
+        "HeroSection" : {
+            "Title" : "InPark Automate Parking Ticket Management System",
+            "Sub-Title" : "We provides an easy way for our user's to manage tickets of parking. Likewise, this system provides additional features for users. The main objective of the System is to manage the details of Duration, Vehicles, Parking Slots, Customers, and Parking Fees on their mobile phones.",
+            "Call-to-Action" : "Read More"
+        },
+        "FeatureSection" : {
+            "Title" : [
+                "RFID Scanning",
+                "Authentic User",
+                "Tracking Chips"
+            ],
+            "description" : [
+                "With the help of help of RFID card user's can save time while exit the parking also fee will aitomatically deduct with App Wallet.",
+                "Each User can register one vehicle on single RFID card and without RFID card the entry in any parking place is invalid.",
+                "User can track the vehicle at any time with the help of tracking chip. In future we can start working on this module."
+            ]
+        },
+        "HowItWorksSection" : {
+            "Title" : "How it works",
+            "sub-title" : "RFID Card and Scanner are main source for this system. With these we can track and secure our vehicle also save our time for parking crowd.",
+            "list-text" : [
+                "User will create his account and sign in by providing right credentials to Inpark App. After that User ordered the RFID card for the vehicle.",
+                "On the other side, Parking Manager also create his account and sign in to the Inpark App. After that he ordered the Scanner for scanning.",
+                "User enter in parking lot and scan the RFID card the Parking details will update which include the Time In/Out with location.",
+                "User exit the parking lot and scan RFID card, Parking Fee will deduct from InPark wallet and notification pop-up about fee deduction.",
+                "User will reharge his wallet through Bank transfer (Easypaisa/Jazzcash) and Parking Manager will withdraw his amount through bank transfer (Easypaisa/Jazzcash)."
+            ]
+        },
+        "FeaturesSpotlights" : {
+            "Title" : "Spotlight Features",
+            "card-1" : {
+                "title" : "Make Record of In-Out Time",
+                "subtitle" : "Our System Offers Advanced Capabilities to Record the Current Time by using RFID.",
+                "overview" : "InPark offers a powerful platform that allows our Clients to easily track the Entrance time(Time-In) and Exit time(Time-Out) of any parking. When the RFID card is Scan the current (In/Out) time is recorded and shown in InPark Application with Total duration. A pop-up appear everytime when RFID card is scanned and data will be updated."
+            },
+            "card-2" : {
+                "title" : "Get Vehicle Tracking (Future Module)",
+                "subtitle" : "Our System Offers Advanced Tracking to Check the Current Location of Vehicle.",
+                "overview" : "InPark offers a powerful platform that allows our Clients to easily track the Current Location of Vehicle by using a small chip. After integration of Chip user send a checking sms on it and for the response the Chip sends the current location. Its detecting range is 4-5 kilometers approximately."
+            }
+        },
+        "InparkWallet" : {
+            "title" : "Discover InPark Wallet",
+            "description" : "InPark introduce its Wallet for users with proper functionalities. Fast transaction based on RFID. Client and Parking Manager both have seperate functionalities according to the roles. Client can recharge its InPark wallet through jazz cash and when exits the parking lot money will automatically be deducted through its wallet. The payment will deduct through the Client InPark wallet, when he scans the RFID card and added to the wallet of current Parking Manager. Also Parking Manager can send money to his personal bank account through InPark wallet."
+        },
+        "WhyUs" : {
+            "title" : "Why Us",
+            "card-1" : {
+                "title" : "Extensive Network of Reliable Users",
+                "overview" : "InPark team provide best quality services to its Users so thay use our services for long time period and connect with us. Our customer trust us because of our relaiable services, support and quality product."
+            },
+            "card-2" : {
+                "title" : "Exceptional Customer Service",
+                "overview" : "InPark offers one-on-one customer support from a team of experts, ensuring that users receive personalized assistance throughout the entire selection, communication, and ordering processes."
+            },
+            "card-3" : {
+                "title" : "Streamlined Platform for Easy Communication",
+                "overview" : "With InPark easy-to-use messaging and ordering platform, Our users can stay in touch and up-to-date with the purchasing process and minimizing confusion. Our team try to reduce the ambiguities for better support."
+            }
+        },
+        "Testimonials" : {
+            "title" : "InPark Team",
+            "card-1" : {
+                "name" : "Mubashir Zaheer",
+                "review" : "The member of InPark team who gives the idea of this system. Develop the Application for Android and IOS by using Flutter with Dart."
+            },
+            "card-2" : {
+                "name" : "Syed Sharjeel",
+                "review" : "The member of InPark team who gives the idea of this system. Develop the Website for users by using React with Node and Express JS."
+            },
+            "card-3" : {
+                "name" : "Azna Ijaz",
+                "review" : "The member of InPark team who gives the idea of this system. Design the interface (UI/UX) for the mobile Application by using Adobe XD."
+            }
+        },
+        "CallToAction" : {
+            "title1" : "Subscribe To Our",
+            "title2" : "Weekly Newsletter",
+            "button" : "Subscribe"
+        }
+
+    },
+    "urdu" : {
+        "HeroSection" : {
+            "Title" : "ان پارک آٹومیٹ پارکنگ ٹکٹ مینجمنٹ سسٹم",
+            "Sub-Title" : "ہم اپنے صارف کے لیے پارکنگ کے ٹکٹوں کا انتظام کرنے کا ایک آسان طریقہ فراہم کرتے ہیں۔ اسی طرح، یہ نظام صارفین کے لیے اضافی خصوصیات فراہم کرتا ہے۔ سسٹم کا بنیادی مقصد ان کے موبائل فون پر دورانیہ، گاڑیوں، پارکنگ سلاٹس، صارفین اور پارکنگ فیس کی تفصیلات کا انتظام کرنا ہے۔",
+            "Call-to-Action" : "Read More"
+        },
+        "FeatureSection" : {
+            "Title" : [
+                "آر ایف آئی ڈی سکیننگ",
+                "مستند صارف",
+                "ٹریکنگ چپس"
+            ],
+            "description" : [
+                "آر ایف آئی ڈی کارڈ کی مدد سے صارف کا پارکنگ سے باہر نکلنے کے دوران وقت کی بچت ہو سکتی ہے اور ایپ والیٹ کے ذریعے فیس خود بخود کٹ جائے گی۔",
+                "ہر صارف سنگل آر ایف آئی ڈی کارڈ کارڈ پر ایک گاڑی رجسٹر کر سکتا ہے اور آر ایف آئی ڈی کارڈ کارڈ کے بغیر کسی بھی پارکنگ کی جگہ پر داخلہ ناجائز ہے۔",
+                "صارف کسی بھی وقت ٹریکنگ چپ کی مدد سے گاڑی کو ٹریک کر سکتا ہے۔ مستقبل میں ہم اس ماڈیول پر کام شروع کر سکتے ہیں۔"
+            ]
+        },
+        "HowItWorksSection" : {
+            "Title" : "یہ کیسے کام کرتا ہے",
+            "sub-title" : "آر ایف آئی ڈی کارڈ اور سکینر اس سسٹم کے لیے اہم ذریعہ ہیں۔ ان کی مدد سے ہم اپنی گاڑی کو ٹریک اور محفوظ کر سکتے ہیں اور پارکنگ کے ہجوم کے لیے ہمارا وقت بھی بچا سکتے ہیں۔",
+            "list-text" : [
+                "صارف اپنا اکاؤنٹ بنائے گا اور انپارک ایپ کو صحیح اسناد فراہم کرکے سائن ان کرے گا۔ اس کے بعد صارف نے گاڑی کے لیے آر ایف آئی ڈی کارڈ کارڈ کا آرڈر دیا۔",
+                "دوسری طرف، پارکنگ مینیجر بھی اپنا اکاؤنٹ بناتا ہے اور انپارک ایپ میں سائن ان کرتا ہے۔ اس کے بعد اس نے سکینر کو سکیننگ کا حکم دیا۔",
+                "صارف پارکنگ میں داخل ہوتا ہے اور آر ایف آئی ڈی کارڈ کو اسکین کرتا ہے جس سے پارکنگ کی تفصیلات اپ ڈیٹ ہو جاتی ہیں جس میں مقام کے ساتھ ٹائم ان/آؤٹ شامل ہوتا ہے۔",
+                "صارف پارکنگ سے باہر نکلتا ہے اور آر ایف آئی ڈی کارڈ اسکین کرتا ہے، پارکنگ فیس ان پارک والیٹ سے کاٹ لی جائے گی اور فیس کی کٹوتی کے بارے میں نوٹیفکیشن پاپ اپ ہوگا۔",
+                "صارف اپنے بٹوے کو بینک ٹرانسفر (ایزی پیسہ/جاز کیش) کے ذریعے دوبارہ چارج کرے گا اور پارکنگ مینیجر اپنی رقم بینک ٹرانسفر (ایزی پیسہ/جاز کیش) کے ذریعے نکالے گا۔"
+            ]
+        },
+        "FeaturesSpotlights" : {
+            "Title" : "اسپاٹ لائٹ کی خصوصیات",
+            "card-1" : {
+                "title" : "ان آؤٹ ٹائم کا ریکارڈ بنائیں",
+                "subtitle" : "ہمارا سسٹم آر ایف آئی ڈی استعمال کرکے موجودہ وقت کو ریکارڈ کرنے کے لیے اعلیٰ صلاحیتوں کی پیشکش کرتا ہے۔",
+                "overview" : "ان پارک ایک طاقتور پلیٹ فارم پیش کرتا ہے جو ہمارے کلائنٹس کو کسی بھی پارکنگ کے داخلے کے وقت (ٹائم ان) اور ایگزٹ ٹائم (ٹائم آؤٹ) کو آسانی سے ٹریک کرنے کی اجازت دیتا ہے۔ جب آر ایف آئی ڈی کارڈ اسکین ہوتا ہے تو موجودہ (ان/آؤٹ) وقت ریکارڈ کیا جاتا ہے اور کل مدت کے ساتھ ان پارک ایپلی کیشن میں دکھایا جاتا ہے۔ ایک پاپ اپ ہر بار ظاہر ہوتا ہے جب آر ایف آئی ڈی کارڈ کو اسکین کیا جاتا ہے اور ڈیٹا کو اپ ڈیٹ کیا جاتا ہے۔"
+            },
+            "card-2" : {
+                "title" : "وہیکل ٹریکنگ حاصل کریں (مستقبل کا ماڈیول)",
+                "subtitle" : "ہمارا سسٹم گاڑی کے موجودہ مقام کو چیک کرنے کے لیے جدید ترین ٹریکنگ پیش کرتا ہے۔",
+                "overview" : "ان پارک ایک طاقتور پلیٹ فارم پیش کرتا ہے جو ہمارے کلائنٹس کو ایک چھوٹی چپ کا استعمال کرتے ہوئے آسانی سے گاڑی کے موجودہ مقام کو ٹریک کرنے کی اجازت دیتا ہے۔ چپ صارف کے انضمام کے بعد اس پر ایک چیکنگ ایس ایم ایس بھیجیں اور جواب کے لیے چپ موجودہ مقام بھیجتا ہے۔ اس کا پتہ لگانے کی حد تقریباً 4-5 کلومیٹر ہے۔"
+            }
+        },
+        "InparkWallet" : {
+            "title" : "ان پارک والیٹ دریافت کریں۔",
+            "description" : "ان پارک نے مناسب فعالیت والے صارفین کے لیے اپنا پرس متعارف کرایا ہے۔ آر ایف آئی ڈی کی بنیاد پر تیز لین دین۔ کلائنٹ اور پارکنگ مینیجر دونوں کے کرداروں کے مطابق الگ الگ افعال ہوتے ہیں۔ کلائنٹ اپنے ان پارک والیٹ کو جاز کیش کے ذریعے ری چارج کر سکتا ہے اور جب پارکنگ لاٹ سے باہر نکلتا ہے تو اس کے والیٹ سے خود بخود رقم کاٹ لی جائے گی۔ ادائیگی کلائنٹ کے ان پارک والیٹ کے ذریعے کٹ جائے گی، جب وہ آر ایف آئی ڈی کارڈ کو اسکین کرے گا اور موجودہ پارکنگ مینیجر کے بٹوے میں شامل کرے گا۔ نیز پارکنگ مینیجر ان پارک والیٹ کے ذریعے اپنے ذاتی بینک اکاؤنٹ میں رقم بھیج سکتا ہے۔"
+        },
+        "WhyUs" : {
+            "title" : "ہم کیوں",
+            "card-1" : {
+                "title" : "قابل اعتماد صارفین کا وسیع نیٹ ورک",
+                "overview" : "ان پارک ٹیم اپنے صارفین کو بہترین معیار کی خدمات فراہم کرتی ہے تاکہ طویل عرصے تک ہماری خدمات کا استعمال کریں اور ہم سے جڑیں۔ ہمارے کسٹمر ہماری قابل اعتماد خدمات، معاونت اور معیاری مصنوعات کی وجہ سے ہم پر اعتماد کرتے ہیں۔"
+            },
+            "card-2" : {
+                "title" : "غیر معمولی کسٹمر سروس",
+                "overview" : "ان پارک ماہرین کی ٹیم کی طرف سے ون آن ون کسٹمر سپورٹ پیش کرتا ہے، اس بات کو یقینی بناتے ہوئے کہ صارفین کو انتخاب، مواصلات اور آرڈر کرنے کے پورے عمل میں ذاتی نوعیت کی مدد حاصل ہو۔"
+            },
+            "card-3" : {
+                "title" : "آسان مواصلات کے لیے ہموار پلیٹ فارم",
+                "overview" : "ان پارک کے استعمال میں آسان پیغام رسانی اور آرڈرنگ پلیٹ فارم کے ساتھ، ہمارے صارفین خریداری کے عمل اور الجھن کو کم کرنے کے ساتھ رابطے میں اور تازہ ترین رہ سکتے ہیں۔ ہماری ٹیم بہتر تعاون کے لیے ابہام کو کم کرنے کی کوشش کرتی ہے۔"
+            }
+        },
+        "Testimonials" : {
+            "title" : "ان پارک ٹیم",
+            "card-1" : {
+                "name" : "مبشر ظہیر",
+                "review" : "ان پارک ٹیم کا ممبر جو اس سسٹم کا آئیڈیا دیتا ہے۔ فلٹر ود ڈارٹ استعمال کر کے اینڈرائیڈ اور آئی او ایس کے لیے ایپلیکیشن تیار کریں۔"
+            },
+            "card-2" : {
+                "name" : "سید شرجیل",
+                "review" : "ان پارک ٹیم کا ممبر جو اس سسٹم کا آئیڈیا دیتا ہے۔ ریکٹ نوڈ کے ساتھ اور ایکسپریس جے ایس استعمال کرکے صارفین کے لیے ویب سائٹ تیار کریں۔"
+            },
+            "card-3" : {
+                "name" : "ازنا اعجاز",
+                "review" : "ان پارک ٹیم کا ممبر جو اس سسٹم کا آئیڈیا دیتا ہے۔ ایڈوب ایکس ڈی استعمال کرکے موبائل ایپلیکیشن کے لیے انٹرفیس (یو آئی / یو ایکس) ڈیزائن کریں۔"
+            }
+        },
+        "CallToAction" : {
+            "title1" : "ہماری سبسکرائب کریں۔",
+            "title2" : "ہفتہ وار نیوز لیٹر",
+            "button" : "سبسکرائب"
+        }
+    }
+}
+

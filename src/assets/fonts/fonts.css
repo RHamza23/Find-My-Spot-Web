@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Cerebri-Sans';
+    src: url(./Cerebri-Sans.ttf);
+  }
+
+@font-face {
+    font-family: 'Cerebri-Bold';
+    src: url(./Cerebri-Bold.ttf);
+  }
+
+@font-face {
+    font-family: 'Cerebri-Light';
+    src: url(./Cerebri-Light.otf);
+  }
+
+@font-face {
+    font-family: 'Now-Bold';
+    src: url(./Now-Bold.otf);
+  }
+  
+@font-face {
+    font-family: 'Now-Regular';
+    src: url(./Now-Regular.otf);
+  }
+  
+p {
+    font-family: 'Cerebri-Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Now-Bold' , Arial, Helvetica, sans-serif;
+}
+
+.primary-button {
+    font-family: 'Now-Regular' , Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: 'Cerebri-Bold', sans-serif;
+}
+
+.contact{
+  font-family: 'Cerebri-Light', sans-serif;
+}
+
