@@ -25,7 +25,7 @@ const AdminLogin = ({ setIsLoggedIn }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email === 'admin@gmail.com' && password === '12345') {
+    if (email === 'admin@findmyspot.com' && password === '12345678') {
       setIsLoggedIn(true); 
       navigate('/admin-dashboard'); 
     } else {

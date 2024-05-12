@@ -27,7 +27,7 @@ const Navbar = () => {
                         <div className=' flex gap-5 items-center'>
                             <div className="items-center flex-shrink-0 hidden lg:flex font-normal">
                                 
-                                <Link className=' self-center text-primary-btn px-6 text-[20px]' to="0">Home</Link>
+                                <Link className=' self-center text-primary-btn px-6 text-[20px]' to="">Home</Link>
                                 <Link className=' self-center text-primary-btn px-6 text-[20px]' to="contact">Contact</Link>
                                 <Link className=' self-center text-primary-btn px-6 text-[20px]' to="map">Map</Link>
                                
