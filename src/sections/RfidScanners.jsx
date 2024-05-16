@@ -66,7 +66,7 @@ const RfidScanners = () => {
               <col />
               <col />
             </colgroup>
-            <thead className="bg-yellow-200">
+            <thead className="bg-blue-200">
               <tr className="text-center">
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">
                   Scanner I.D
@@ -94,7 +94,7 @@ const RfidScanners = () => {
             <tbody>
               {scannerData?.map((scanner, index) => (
                 
-                <tr className="text-center bg-yellow-100 hover:bg-blue-100 shadow-sm" key={scanner.id}>
+                <tr className="text-center bg-blue-100 hover:bg-blue-100 shadow-sm" key={scanner.id}>
                   <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
                     {scanner?.ScannerId}
                   </td>
@@ -111,7 +111,7 @@ const RfidScanners = () => {
                     {scanner?.ImplementedAddress}
                   </td>
                   <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                      <select className="py-2 px-2 rounded bg-yellow-100 hover:bg-blue-100 shadow-sm outline-none border-2 border-indigo-600"
+                      <select className="py-2 px-2 rounded bg-blue-100 hover:bg-blue-300 shadow-sm outline-none border-2 border-indigo-600"
                           value={scanner.OrderStatus} onChange={(e) => handleDropdownChange(e, scanner.id)}>
                           <option value="" disabled>{scanner?.OrderStatus}</option>
                           {entities.map((entity) => (

@@ -12,7 +12,7 @@ import AdminLogin from './sections/AdminLogin';
 import AdminDashboard from './sections/AdminDashboard';
 import Footer from './sections/Footer';
 import Error from './sections/Error';
-import InparkMap from './sections/InparkMap';
+import FindmyspotMap from './sections/FindmyspotMap';
 import Clients from './sections/Clients';
 import ParkingManager from './sections/ParkingManager';
 import RfidCards from './sections/RfidCards';
@@ -44,7 +44,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/map" element={<InparkMap />} />
+          <Route path="/map" element={<FindmyspotMap />} />
           
           <Route
             path="/admin-login"

@@ -40,7 +40,7 @@ const CallToAction = () => {
 
   return (
     <section className=" my-20 px-6 md:px-0">
-      <div data-aos="fade-up" className="container bg-gradient-to-l from-yellow-400 to-yellow-500 md:max-w-screen-lg rounded-2xl mx-auto flex flex-col justify-center p-4 py-10 space-y-10 md:p-10 md:px-16 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row">
+      <div data-aos="fade-up" className="container bg-gradient-to-l from-blue-400 to-blue-500 md:max-w-screen-lg rounded-2xl mx-auto flex flex-col justify-center p-4 py-10 space-y-10 md:p-10 md:px-16 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row">
         <div className="flex flex-col space-y-4 text-center lg:text-left text-white">
           <h1 className="md:text-[40px] text-3xl font-bold leading-none">{showText().title1}</h1>
           <h1 className="md:text-[40px] text-3xl font-bold leading-none">{showText().title2}</h1>

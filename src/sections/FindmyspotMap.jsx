@@ -19,7 +19,7 @@ const markers = [
   { lat: 31.5293, lng: 74.3787 }, // Mall of Lahore
 ];
 
-const InparkMap = () => {
+const FindmyspotMap = () => {
   return (
 
       <LoadScript googleMapsApiKey={API_KEY}>
@@ -35,4 +35,4 @@ const InparkMap = () => {
   )
 }
 
-export default InparkMap
+export default FindmyspotMap

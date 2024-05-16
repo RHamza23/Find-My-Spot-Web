@@ -25,7 +25,7 @@ const Contact = () => {
     <>
       <br />
       <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-6 rounded-md shadow-lg transform hover:scale-105 transition-transform duration-300">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-yellow-500">Ask Your Query</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-center text-blue-500">Ask Your Query</h2>
         <div className="mb-6">
           <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">Name</label>
           <input

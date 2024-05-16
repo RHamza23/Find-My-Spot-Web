@@ -34,7 +34,7 @@ const VehicleTheft = () => {
               <col />
               <col />
             </colgroup>
-            <thead className="bg-yellow-200">
+            <thead className="bg-blue-200">
               <tr className="text-center"> 
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Name</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">CNIC</th>
@@ -48,7 +48,7 @@ const VehicleTheft = () => {
 
             {vehicleData?.map((vehicle, index) => (
 
-              <tr className="text-center bg-yellow-100 hover:bg-blue-100 shadow-sm">
+              <tr className="text-center bg-blue-100 hover:bg-blue-300 shadow-sm">
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
                   {vehicle?.Name}
                 </td>

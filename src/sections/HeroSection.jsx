@@ -29,7 +29,7 @@ const HeroSection = () => {
                 </div>
                 <div data-aos="fade-left" className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
                     <img src={heroImage} alt="" className=" z-20 object-contain h-72 sm:h-80 lg:h-[500px] xl:h-112 2xl:h-128" />
-                    <div className=' md:ml-56 ml-20 absolute bg-shade rounded-full h-56 w-56 md:h-96 md:w-96 blur-xl'></div>
+                    <div className=' md:ml-56 ml-20 absolute bg-blue-500 rounded-full h-56 w-56 md:h-96 md:w-96 blur-xl'></div>
                 </div>
             </div>
         </section>

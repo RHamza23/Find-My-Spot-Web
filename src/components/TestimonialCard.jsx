@@ -2,7 +2,7 @@ import React from 'react'
 
 const TestimonialCard = (props) => {
     return (
-        <div data-aos="fade-left" data-aos-delay={props.animation} className=' w-[300px] rounded-2xl bg-gradient-to-l from-yellow-400 to-yellow-500 text-black p-5'>
+        <div data-aos="fade-left" data-aos-delay={props.animation} className=' w-[300px] rounded-2xl bg-gradient-to-l from-blue-400 to-blue-500 text-white p-5'>
             <div>
                 <div className=' flex justify-end'>
                 <img

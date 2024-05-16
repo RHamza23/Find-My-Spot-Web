@@ -10,7 +10,7 @@ const SpotlightCard = (props) => {
             <p className=' text-lg mb-7 text-secondary-txt md:w-96'>{props.overview}</p>
             <ReadmoreButton text= {'Read More'} />
         </div>
-        <div className=' relative bg-gradient-to-l from-yellow-300 to-yellow-400 rounded-e-xl overflow-hidden pt-10 md:pt-0 flex items-end justify-center'>
+        <div className=' relative bg-gradient-to-l from-blue-300 to-blue-400 rounded-e-xl overflow-hidden pt-10 md:pt-0 flex items-end justify-center'>
             <img src={props.image} alt="" className=' rounded-e-xl z-20' />
             <div className=' md:ml-32 ml-20 absolute bg-shadow-shade h-64 w-56 md:h-[500px] md:w-[200px] rounded-xl blur-xl'></div>
         </div>

@@ -4,13 +4,13 @@ import img2 from '../assets/img/14.svg'
 import { LangContext } from '../LangContext';
 import * as Text from "../Text.json";
 
-const InparkWallet = () => {
+const findmyspotWallet = () => {
   const { language } = useContext(LangContext);
   const showText = () => {
     if (language) {
-      return Text.eng.InparkWallet
+      return Text.eng.findmyspotWallet
     } else {
-      return Text.urdu.InparkWallet
+      return Text.urdu.findmyspotWallet
     }
   }
   return (
@@ -45,4 +45,4 @@ const InparkWallet = () => {
   )
 }
 
-export default InparkWallet
+export default findmyspotWallet

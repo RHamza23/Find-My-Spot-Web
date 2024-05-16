@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import logo from '../assets/img/InPark-Logo2.png'
+import logo from '../assets/img/findmyspot-Logo2.png'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { LangContext } from '../LangContext';
 import { Link } from 'react-router-dom'
@@ -15,8 +15,8 @@ const Navbar = () => {
 
     return (
         <header className="lg:pt-8 lg:pb-4 p-4 lg:px-12 shadow-lg transition-all duration-500">
-            <div className="container flex justify-between items-center h-16 mx-auto transition-all duration-500">
-                <div className=" w-full pr-8 pl-4 flex items-center justify-between md:mx-auto md:max-w-[1450px] h-24 overflow-x-hidden">
+            <div className="container flex justify-between items-center h-25 mx-auto transition-all duration-500">
+                <div className=" w-full pr-8 pl-4 flex items-center justify-between md:mx-auto md:max-w-[1450px] h-21 overflow-x-hidden">
                     <div className=" flex items-center">
                         <div className=" w-36">
                             <img src={logo} alt="" />

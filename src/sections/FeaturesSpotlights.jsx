@@ -15,7 +15,7 @@ const FeaturesSpotlights = () => {
         }
     }
     return (
-        <section className=" bgbackground-lgtyellow pt-20">
+        <section className=" bgbackground-lgtblue pt-20">
             <div className="container max-w-xl p-6 py-0 mx-auto space-y-10 text-gray-400 lg:px-8 lg:max-w-7xl">
                 <div data-aos="fade-down">
                     <h1 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-primary-txt">{showText().Title}</h1>

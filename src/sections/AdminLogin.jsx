@@ -38,7 +38,7 @@ const AdminLogin = ({ setIsLoggedIn }) => {
       <div className="flex items-center justify-center h-screen bg-gray-200">
         <div className="w-full max-w-md bg-white rounded-lg shadow-lg overflow-hidden mx-4">
           <div className="px-10 py-8">
-            <h2 className="text-3xl font-bold mb-4 text-center text-yellow-500">
+            <h2 className="text-3xl font-bold mb-4 text-center text-blue-500">
               LOG IN
             </h2>
             {errorMessage && (
@@ -57,7 +57,7 @@ const AdminLogin = ({ setIsLoggedIn }) => {
                   id="email"
                   value={email}
                   onChange={handleEmailChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-yellow-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500"
                   placeholder="Enter your email"
                 />
               </div>
@@ -74,7 +74,7 @@ const AdminLogin = ({ setIsLoggedIn }) => {
                     id="password"
                     value={password}
                     onChange={handlePasswordChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-yellow-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500"
                     placeholder="Enter your password"
                   />
                   <div
@@ -122,7 +122,7 @@ const AdminLogin = ({ setIsLoggedIn }) => {
               <div className="flex items-center justify-center">
                 <button
                   type="submit"
-                  className="w-full px-4 py-2 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 focus:outline-none focus:shadow-outline animate__animated animate__bounce"
+                  className="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline animate__animated animate__bounce"
                 >
                   Login
                 </button>

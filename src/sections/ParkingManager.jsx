@@ -8,7 +8,7 @@ const ParkingManager = () => {
     const [userData, setUserData] = useState([]);
   useEffect(() => {
     const getUsers = async () => {
-      const querySnapshot = await getDocs(collection(db, "ParkingManager"));
+      const querySnapshot = await getDocs(collection(db, "Parking Manager"));
       const clientArray = [];
       querySnapshot.forEach((doc) => {
         clientArray.push(doc.data());
@@ -32,7 +32,7 @@ const ParkingManager = () => {
               <col />
               <col />
             </colgroup>
-            <thead className="bg-yellow-200">
+            <thead className="bg-blue-200">
               <tr className="text-center"> 
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">I.D #</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Name</th>
@@ -45,7 +45,7 @@ const ParkingManager = () => {
             <tbody>
 
             {userData?.map((parkingmanager, index) => (
-              <tr className="text-center bg-yellow-100 hover:bg-blue-100 shadow-sm">
+              <tr className="text-center bg-blue-100 hover:bg-blue-100 shadow-sm">
                 <td className="py-3 px-6 tracking-wider text-sm font-bold text-gray-700">
                 Parking Manager {index + 1} :
                 </td>

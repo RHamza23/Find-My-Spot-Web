@@ -16,7 +16,7 @@ const Testimonials = () => {
         }
     }
     return (
-        <div className="px-4 flex flex-col justify-center py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-20 bgbackground-yellow">
+        <div className="px-4 flex flex-col justify-center py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-20 bgbackground-blue">
             <div data-aos="fade-right">
                 <h1 className='max-w-lg mb-16 text-3xl font-bold sm:text-5xl md:ml-28 text-primary-txt capitalize'>{showText().title}</h1>
             </div>
