@@ -6,7 +6,7 @@ const TestimonialCard = (props) => {
             <div>
                 <div className=' flex justify-end'>
                 <img
-                    className="object-cover w-24 h-24 rounded-full shadow"
+                    className="object-cover w-28 h-28 rounded-full shadow"
                     src={props.image}
                     alt="Person"
                 />

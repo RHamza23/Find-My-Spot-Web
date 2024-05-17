@@ -7,7 +7,7 @@ const Error = () => {
         {/* Page Not Found, Please Write Valid URL... */}
         
         <div className="text-center mt-8">
-      <div className="bg-yellow-200 rounded-md p-4">
+      <div className="bg-blue-200 rounded-md p-4">
         <h1 className="text-3xl font-bold mb-2">
             Page Not Found
         </h1>

@@ -50,7 +50,7 @@ const Footer = () => {
                             title="Our phone"
                             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                            (+92)3221485966
+                            (+92)3218827604
                         </a>
                     </div>
                     <div className=" mb-7 text-gray-100">

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import TestimonialCard from '../components/TestimonialCard'
-import img1 from '../assets/img/24.jpeg'
+import img1 from '../assets/img/24.jpg'
 import img2 from '../assets/img/25.jpg'
-import img3 from '../assets/img/26.jpeg'
+import img3 from '../assets/img/26.jpg'
 import { LangContext } from '../LangContext';
 import * as Text from "../Text.json";
 
