@@ -9,7 +9,7 @@ const ListItem = (props) => {
                 </div>
             </div>
             <div className="px-3 mt-6 md:mt-0 md:px-0 md:ml-4">
-                <p className="text-base dark:text-gray-400 text-center">{props.text}</p>
+                <p className="text-base dark:text-gray-400 ml-3 text-justify">{props.text}</p>
             </div>
         </div>
     )

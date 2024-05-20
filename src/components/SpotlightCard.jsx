@@ -7,7 +7,7 @@ const SpotlightCard = (props) => {
         <div className=' p-16 text-center md:text-start '>
             <h1 className=' text-primary-txt text-2xl mb-7 md:w-96'>{props.title}</h1>
             <h1 className=' text-[26px] text-secondary-txt mb-7 md:w-96'>{props.subtitle}</h1>
-            <p className=' text-lg mb-7 text-secondary-txt md:w-96'>{props.overview}</p>
+            <p className=' text-lg mb-7 text-secondary-txt md:w-96 text-justify'>{props.overview}</p>
             <ReadmoreButton text= {'Read More'} />
         </div>
         <div className=' relative bg-gradient-to-l from-blue-300 to-blue-400 rounded-e-xl overflow-hidden pt-10 md:pt-0 flex items-end justify-center'>

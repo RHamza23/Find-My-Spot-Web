@@ -67,19 +67,19 @@ const Footer = () => {
                     <div className="flex items-center mt-1 space-x-3 justify-center md:justify-start">
                         <a
                             
-                            className="text-background-blue transition-all duration-300 hover:text-white hover:scale-150"
+                            className="text-blue-500 transition-all duration-300 hover:text-white hover:scale-150"
                         >
                             <FaFacebookF size={25} />
                         </a>
                         <a
                             
-                            className="text-background-blue transition-all duration-300 hover:text-white hover:scale-150"
+                            className="text-blue-300 transition-all duration-300 hover:text-white hover:scale-150"
                         >
                             <FaTwitter size={28}/>
                         </a>
                         <a
                             
-                            className="text-background-blue transition-all duration-300 hover:text-white hover:scale-150"
+                            className="text-red-400 transition-all duration-300 hover:text-white hover:scale-150"
                         >
                             <FaInstagram size={28} />
                         </a>

@@ -18,10 +18,10 @@ const HeroSection = () => {
         <section className="bg-white mt-5">
             <div className="container flex flex-col justify-center p-10 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                 <div data-aos="fade-right" className="flex flex-col justify-center pt-1 pl-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left ">
-                    <h1 className="text-4xl font-bold leading-none sm:text-5xl text-primary-txt">
+                    <h1 className="text-4xl font-bold sm:text-4xl text-primary-txt">
                         {showText().Title}
                     </h1>
-                    <p className="mt-6 mb-8 text-lg sm:mb-12 text-secondary-txt">{showText()['Sub-Title']}
+                    <p className="mt-6 mb-8 text-lg sm:mb-12 text-secondary-txt text-justify">{showText()['Sub-Title']}
                     </p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                         <Button text={<span>{showText()['Call-to-Action']}</span>} />
