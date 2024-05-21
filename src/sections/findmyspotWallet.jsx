@@ -21,7 +21,7 @@ const findmyspotWallet = () => {
             <h1 className="max-w-lg mb-6 text-primary-txt text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
               {showText().title}
             </h1>
-            <p className="text-base mt-10 text-gray-500 md:text-2xl ">
+            <p className="text-base mt-10 text-gray-500 md:text-2xl text-justify">
               {showText().description}
             </p>
           </div>
@@ -30,7 +30,7 @@ const findmyspotWallet = () => {
       <div className="z-0 flex gap-3 justify-center h-full lg:pt-60 pl-14 lg:pl-0 md:pl-0 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-full lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:right-10 lg:items-center -rotate-[10deg]">
         <img
           src={img1} 
-          // shadow-2xl
+          shadow-2xl
           className="object-contain h-72 sm:h-80 lg:h-[600px] xl:h-112 2xl:h-128 rounded-b-3xl"
           alt=""
         />

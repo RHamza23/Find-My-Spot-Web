@@ -4,7 +4,7 @@ import FeatureSection from "./FeatureSection"
 import StatsSection from "./StatsSection"
 import HowItWorksSection from "./HowItWorksSection"
 import FeaturesSpotlights from "./FeaturesSpotlights"
-import findmyspotWallet from "./findmyspotWallet"
+import FindMySpotWallet from "./FindMySpotWallet"
 import WhyUs from "./WhyUs"
 import Testimonials from "./Testimonials"
 import CallToAction from "./CallToAction"
@@ -17,7 +17,7 @@ const Home = () => {
         <StatsSection  />
         <HowItWorksSection  />
         <FeaturesSpotlights  />
-        <findmyspotWallet  /> 
+        <FindMySpotWallet /> 
         <WhyUs  />
         <Testimonials  />
         <CallToAction  /> 

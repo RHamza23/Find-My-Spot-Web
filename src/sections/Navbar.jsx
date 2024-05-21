@@ -1,16 +1,43 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import logo from '../assets/img/findmyspot-Logo2.png';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { LangContext } from '../LangContext';
 import { Link } from 'react-router-dom';
+import { auth, db } from '../firebase'; // Adjust the path based on your project structure
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { doc, getDoc } from 'firebase/firestore';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const { language, toggleFunction } = useContext(LangContext);
+    const [currentUser, setCurrentUser] = useState(null);
+    const [username, setUsername] = useState('');
 
-    function toggleMenu() {
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                setCurrentUser(user);
+                const userDoc = await getDoc(doc(db, 'users', user.uid));
+                if (userDoc.exists()) {
+                    setUsername(userDoc.data().username);
+                }
+            } else {
+                setCurrentUser(null);
+                setUsername('');
+            }
+        });
+        return () => unsubscribe();
+    }, []);
+
+    const handleSignOut = async () => {
+        signOut(auth);
+        setCurrentUser(null);
+        setUsername('');
+    };
+
+    const toggleMenu = () => {
         setOpenMenu(prevState => !prevState);
-    }
+    };
 
     return (
         <header className="lg:pt-8 lg:pb-4 p-4 lg:px-12 shadow-lg transition-all duration-500 bg-gradient-to-r from-blue-300 to-blue-100">
@@ -28,8 +55,17 @@ const Navbar = () => {
                                 <Link to="/" className=' self-center text-primary-btn px-6 text-[20px]'>Home</Link>
                                 <Link to="/contact" className=' self-center text-primary-btn px-6 text-[20px]'>Contact</Link>
                                 <Link to="/map" className=' self-center text-primary-btn px-6 text-[20px]'>Map</Link>
-                                <Link to="/signup" className=' self-center text-primary-btn px-6 text-[20px]'>Sign Up</Link>
-                                <Link to="/login" className=' self-center text-primary-btn px-6 text-[20px]'>Log In</Link>
+                                {currentUser ? (
+                                    <>
+                                        <span className=' self-center text-primary-btn px-6 text-[20px]'>Hello, {username}</span>
+                                        <button onClick={handleSignOut} className=' self-center text-primary-btn px-6 text-[20px]'>Sign Out</button>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Link to="/signup" className=' self-center text-primary-btn px-6 text-[20px]'>Sign Up</Link>
+                                        <Link to="/signin" className=' self-center text-primary-btn px-6 text-[20px]'>Log In</Link>
+                                    </>
+                                )}
                             </div>
                             <div className=' hidden md:block'>
                                 <label htmlFor="Toggle4" className="inline-flex items-center p-1 cursor-pointer">
@@ -57,8 +93,17 @@ const Navbar = () => {
                             <Link to="/" className=' self-center text-primary-btn px-6 text-[20px]'>Home</Link>
                             <Link to="/contact" className=' self-center text-primary-btn px-6 text-[20px]'>Contact</Link>
                             <Link to="/map" className=' self-center text-primary-btn px-6 text-[20px]'>Map</Link>
-                            <Link to="/signup" className=' self-center text-primary-btn px-6 text-[20px]'>Sign Up</Link>
-                            <Link to="/login" className=' self-center text-primary-btn px-6 text-[20px]'>Log In</Link>
+                            {currentUser ? (
+                                <>
+                                    <span className=' self-center text-primary-btn px-6 text-[20px]'>Hello, {username}</span>
+                                    <button onClick={handleSignOut} className=' self-center text-primary-btn px-6 text-[20px]'>Sign Out</button>
+                                </>
+                            ) : (
+                                <>
+                                    <Link to="/signup" className=' self-center text-primary-btn px-6 text-[20px]'>Sign Up</Link>
+                                    <Link to="/signin" className=' self-center text-primary-btn px-6 text-[20px]'>Log In</Link>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>
