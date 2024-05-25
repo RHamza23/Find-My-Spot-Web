@@ -8,7 +8,7 @@ const ParkingManager = () => {
     const [userData, setUserData] = useState([]);
   useEffect(() => {
     const getUsers = async () => {
-      const querySnapshot = await getDocs(collection(db, "ParkingManager"));
+      const querySnapshot = await getDocs(collection(db, "Parking Manager"));
       const clientArray = [];
       querySnapshot.forEach((doc) => {
         clientArray.push(doc.data());
