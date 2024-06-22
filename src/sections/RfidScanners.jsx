@@ -8,7 +8,7 @@ const RfidScanners = () => {
   useEffect(() => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(
-        collection(db, "Admin", "Scanner Order", "Orders")
+        collection(db, "Scanner Orders")
       );
       const scannerArray = [];
       querySnapshot.forEach((doc) => {
@@ -96,19 +96,19 @@ const RfidScanners = () => {
                 
                 <tr className="text-center bg-blue-100 hover:bg-blue-100 shadow-sm" key={scanner.id}>
                   <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                    {scanner?.ScannerId}
+                    {scanner?.scannerData.scanner_id}
                   </td>
                   <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                    {scanner?.PhoneNumber}
+                    {scanner?.scannerData.phone_number}
                   </td>
                   <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                    {scanner?.PaymentMethod}
+                    {scanner?.scannerData.payment_method}
                   </td>
                   <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                    {scanner?.ShipmentAddress}
+                    {scanner?.scannerData.shipment_address}
                   </td>
                   <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                    {scanner?.ImplementedAddress}
+                    {scanner?.scannerData.implemented_address}
                   </td>
                   <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
                       <select className="py-2 px-2 rounded bg-blue-100 hover:bg-blue-300 shadow-sm outline-none border-2 border-indigo-600"

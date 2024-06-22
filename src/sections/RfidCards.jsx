@@ -8,7 +8,7 @@ const RfidCards = () => {
   useEffect(() => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(
-        collection(db, "Admin", "Cards Order", "Orders")
+        collection(db, "Card Orders")
       );
       const cardArray = [];
       querySnapshot.forEach((doc) => {
@@ -87,30 +87,30 @@ const RfidCards = () => {
 
               <tr className="text-center bg-blue-100 hover:bg-blue-100 shadow-sm" key={card.id}>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                {card?.CardId}
+                {card?.id}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {card?.Name}
+                  {card?.orderData.name}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {card?.Email}
+                  {card?.orderData.email}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {card?.Address}
+                  {card?.orderData.address}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {card?.PhoneNo}
+                  {card?.orderData.phone_no}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {card?.CardValid}
+                  {card?.orderData.card_valid}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {card?.VehicleNo}
+                  {card?.orderData.vehicle_no}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
                       <select className="py-2 px-2 rounded bg-blue-100 hover:bg-blue-300 shadow-sm outline-none border-2 border-indigo-600"
-                          value={card.OrderStatus} onChange={(e) => handleDropdownChange(e, card.id)}>
-                          <option value="" disabled>{card?.OrderStatus}</option>
+                          value={card.order_status} onChange={(e) => handleDropdownChange(e, card.id)}>
+                          <option value="" disabled>{card?.order_status}</option>
                           {entities.map((entity) => (
                             <option className="text-black text-sm font-medium" key={entity} value={entity}>
                               {entity}

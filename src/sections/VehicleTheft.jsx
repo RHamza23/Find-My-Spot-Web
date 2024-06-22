@@ -8,7 +8,7 @@ const VehicleTheft = () => {
     const [vehicleData, setVehicleData] = useState([]);
   useEffect(() => {
     const getUsers = async () => {
-      const querySnapshot = await getDocs(collection(db, "Admin", "Vehicle Theft", "Requests"));
+      const querySnapshot = await getDocs(collection(db, "Vehicle Theft"));
       const vehicleArray = [];
       querySnapshot.forEach((doc) => {
         vehicleArray.push(doc.data());
@@ -50,22 +50,22 @@ const VehicleTheft = () => {
 
               <tr className="text-center bg-blue-100 hover:bg-blue-300 shadow-sm">
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {vehicle?.Name}
+                  {vehicle?.name}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {vehicle?.Cnic}
+                  {vehicle?.cnic}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {vehicle?.Date}
+                  {vehicle?.date}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {vehicle?.VehicleNo}
+                  {vehicle?.vehicle_no}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {vehicle?.VehicleType}
+                  {vehicle?.vehicle_type}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {vehicle?.ComplainDescription}
+                  {vehicle?.complain_description}
                 </td>
               </tr>
               ))}
