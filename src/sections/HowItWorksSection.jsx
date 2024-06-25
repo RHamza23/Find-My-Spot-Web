@@ -4,13 +4,8 @@ import { LangContext } from '../LangContext';
 import * as Text from "../Text.json";
 
 const HowItWorksSection = () => {
-    const {language} = useContext(LangContext);
     const showText = () =>{
-        if (language) {
-            return Text.eng.HowItWorksSection
-        } else {
-            return Text.urdu.HowItWorksSection    
-        }
+        return Text.eng.HowItWorksSection
     }
     return (
         <section className="bg-white mt-20 text-primary-txt">

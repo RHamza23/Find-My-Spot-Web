@@ -9,11 +9,7 @@ import * as Text from "../Text.json";
 const Testimonials = () => {
     const {language} = useContext(LangContext);
     const showText = () =>{
-        if (language) {
-            return Text.eng.Testimonials
-        } else {
-            return Text.urdu.Testimonials    
-        }
+        return Text.eng.Testimonials
     }
     return (
         <div className="px-4 flex flex-col justify-center py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-20 bgbackground-blue">

@@ -12,13 +12,8 @@ import * as Text from "../Text.json";
 
 
 const List = () => {
-    const {language} = useContext(LangContext);
     const showText = () =>{
-        if (language) {
-            return Text.eng.HowItWorksSection['list-text']
-        } else {
-            return Text.urdu.HowItWorksSection['list-text']    
-        }
+        return Text.eng.HowItWorksSection['list-text']
     }
     return (
         <div>
@@ -30,9 +25,6 @@ const List = () => {
                         <ListItem bullet={bullet3} text={showText()[2]} />
                         <ListItem bullet={bullet4} text={showText()[3]} />
                         <ListItem bullet={bullet5} text={showText()[4]} />
-                    </div>
-                    <div className=' mt-14 text-center'>
-                        <ReadmoreButton text={'Read More'} />
                     </div>
                 </div>
                 <div data-aos="fade-up" className="md:w-[600px] lg:mt-1 lg:col-start-1 lg:row-start-1">

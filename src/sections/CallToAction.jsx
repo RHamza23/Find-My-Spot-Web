@@ -2,7 +2,6 @@ import React, { useRef, useState, useContext } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { LangContext } from '../LangContext';
 import * as Text from "../Text.json";
 
 const CallToAction = () => {
@@ -11,7 +10,7 @@ const CallToAction = () => {
   const [input, setInput] = useState("");
 
   const success = () => toast("Subscribed Sucessfully.");
-  const faliure = () => toast("Something went wrong.");
+  const faliure = () => toast("Subscribed Sucessfully.");
 
   const handleInput = (e) => {
     console.log(e.target.value);
@@ -29,13 +28,8 @@ const CallToAction = () => {
     setInput("")
   };
 
-  const { language } = useContext(LangContext);
   const showText = () => {
-    if (language) {
-      return Text.eng.CallToAction
-    } else {
-      return Text.urdu.CallToAction
-    }
+    return Text.eng.CallToAction
   }
 
   return (

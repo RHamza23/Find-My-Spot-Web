@@ -7,11 +7,7 @@ import * as Text from "../Text.json";
 const findmyspotWallet = () => {
   const { language } = useContext(LangContext);
   const showText = () => {
-    if (language) {
-      return Text.eng.findmyspotWallet
-    } else {
-      return Text.urdu.findmyspotWallet
-    }
+    return Text.eng.findmyspotWallet
   }
   return (
     <div className=" bgbackground-sky text-primary-txt relative flex flex-col px-4 py-16 mx-auto overflow-hidden lg:block lg:flex-col-reverse lg:py-24 xl:py-25 md:px-4 sm:max-w-xl md:max-w-full">

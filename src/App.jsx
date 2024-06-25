@@ -18,9 +18,7 @@ import ParkingManager from './sections/ParkingManager';
 import RfidCards from './sections/RfidCards';
 import RfidScanners from './sections/RfidScanners';
 import VehicleTheft from './sections/VehicleTheft';
-import SignUp from './sections/Signup';
-import Signin from './sections/Signin'; // Assuming you have a Signin component
-import Signup from './sections/Signup';
+
 
 const ProtectedRoute = ({ element: Component, isLoggedIn }) => {
   return isLoggedIn ? (
@@ -48,9 +46,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/map" element={<FindmyspotMap />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/signin" element={<Signin />} />
-
 
           <Route
             path="/admin-login"

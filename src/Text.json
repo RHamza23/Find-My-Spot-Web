@@ -3,7 +3,8 @@
         "HeroSection" : {
             "Title" : "Automated Parking Ticket Management System",
             "Sub-Title" : "We provides an easy way for our user's to manage tickets of parking. Likewise, this system provides additional features for users. The main objective of the System is to manage the details of Duration, Vehicles, Parking Slots, Customers, and Parking Fees on their mobile phones.",
-            "Call-to-Action" : "Read More"
+            "Call-to-Action" : "Read More",
+            "Expanded-Text": "In addition to its core functionalities, our system goes beyond basic ticket management. It incorporates advanced features aimed at enhancing user satisfaction and operational efficiency. These additional capabilities include real-time updates on parking availability, personalized customer profiles for streamlined service, and automated fee calculations based on parking duration and vehicle type. By leveraging these features, our system not only simplifies parking management but also aims to provide a comprehensive solution that meets the diverse needs of both individual users and businesses alike."
         },
         "FeatureSection" : {
             "Title" : [
@@ -33,7 +34,7 @@
             "card-1" : {
                 "title" : "Make Record of In-Out Time",
                 "subtitle" : "Our System Offers Advanced Capabilities to Record the Current Time by using RFID.",
-                "overview" : "Find y Spot offers a powerful platform that allows our Clients to easily track the Entrance time(Time-In) and Exit time(Time-Out) of any parking. When the RFID card is Scan the current (In/Out) time is recorded and shown in Find My Spot Application with Total duration. A pop-up appear everytime when RFID card is scanned and data will be updated."
+                "overview" : "Find My Spot offers a powerful platform that allows our Clients to easily track the Entrance time(Time-In) and Exit time(Time-Out) of any parking. When the RFID card is Scan the current (In/Out) time is recorded and shown in Find My Spot Application with Total duration. A pop-up appear everytime when RFID card is scanned and data will be updated."
             },
             "card-2" : {
                 "title" : "Get Vehicle Tracking (Future Module)",
@@ -49,16 +50,20 @@
             "title" : "Why Us",
             "card-1" : {
                 "title" : "Extensive Network of Reliable Users",
+                "details": "Detailed information about Card 1.",
                 "overview" : "Finf My Spot team provide best quality services to its Users so thay use our services for long time period and connect with us. Our customer trust us because of our relaiable services, support and quality product."
             },
             "card-2" : {
                 "title" : "Exceptional Customer Service",
+                "details": "Detailed information about Card 1.",
                 "overview" : "Find My Spot offers one-on-one customer support from a team of experts, ensuring that users receive personalized assistance throughout the entire selection, communication, and ordering processes."
             },
             "card-3" : {
                 "title" : "Streamlined Platform for Easy Communication",
+                "details": "Detailed information about Card 1.",
                 "overview" : "With Find My Spot easy-to-use messaging and ordering platform, Our users can stay in touch and up-to-date with the purchasing process and minimizing confusion. Our team try to reduce the ambiguities for better support."
-            }
+            },
+            "moreText" : "Sheraz"
         },
         "Testimonials" : {
             "title" : "Find My Spot Team",
@@ -81,88 +86,5 @@
             "button" : "Subscribe"
         }
 
-    },
-    "urdu" : {
-        "HeroSection" : {
-            "Title" : "فائند مائی سپاٹ آٹومیٹ پارکنگ ٹکٹ مینجمنٹ سسٹم",
-            "Sub-Title" : "ہم اپنے صارف کے لیے پارکنگ کے ٹکٹوں کا انتظام کرنے کا ایک آسان طریقہ فراہم کرتے ہیں۔ اسی طرح، یہ نظام صارفین کے لیے اضافی خصوصیات فراہم کرتا ہے۔ سسٹم کا بنیادی مقصد ان کے موبائل فون پر دورانیہ، گاڑیوں، پارکنگ سلاٹس، صارفین اور پارکنگ فیس کی تفصیلات کا انتظام کرنا ہے۔",
-            "Call-to-Action" : "Read More"
-        },
-        "FeatureSection" : {
-            "Title" : [
-                "آر ایف آئی ڈی سکیننگ",
-                "مستند صارف",
-                "ٹریکنگ چپس"
-            ],
-            "description" : [
-                "آر ایف آئی ڈی کارڈ کی مدد سے صارف کا پارکنگ سے باہر نکلنے کے دوران وقت کی بچت ہو سکتی ہے اور ایپ والیٹ کے ذریعے فیس خود بخود کٹ جائے گی۔",
-                "ہر صارف سنگل آر ایف آئی ڈی کارڈ کارڈ پر ایک گاڑی رجسٹر کر سکتا ہے اور آر ایف آئی ڈی کارڈ کارڈ کے بغیر کسی بھی پارکنگ کی جگہ پر داخلہ ناجائز ہے۔",
-                "صارف کسی بھی وقت ٹریکنگ چپ کی مدد سے گاڑی کو ٹریک کر سکتا ہے۔ مستقبل میں ہم اس ماڈیول پر کام شروع کر سکتے ہیں۔"
-            ]
-        },
-        "HowItWorksSection" : {
-            "Title" : "یہ کیسے کام کرتا ہے",
-            "sub-title" : "آر ایف آئی ڈی کارڈ اور سکینر اس سسٹم کے لیے اہم ذریعہ ہیں۔ ان کی مدد سے ہم اپنی گاڑی کو ٹریک اور محفوظ کر سکتے ہیں اور پارکنگ کے ہجوم کے لیے ہمارا وقت بھی بچا سکتے ہیں۔",
-            "list-text" : [
-                "صارف اپنا اکاؤنٹ بنائے گا اور انپارک ایپ کو صحیح اسناد فراہم کرکے سائن ان کرے گا۔ اس کے بعد صارف نے گاڑی کے لیے آر ایف آئی ڈی کارڈ کارڈ کا آرڈر دیا۔",
-                "دوسری طرف، پارکنگ مینیجر بھی اپنا اکاؤنٹ بناتا ہے اور انپارک ایپ میں سائن ان کرتا ہے۔ اس کے بعد اس نے سکینر کو سکیننگ کا حکم دیا۔",
-                "صارف پارکنگ میں داخل ہوتا ہے اور آر ایف آئی ڈی کارڈ کو اسکین کرتا ہے جس سے پارکنگ کی تفصیلات اپ ڈیٹ ہو جاتی ہیں جس میں مقام کے ساتھ ٹائم ان/آؤٹ شامل ہوتا ہے۔",
-                "صارف پارکنگ سے باہر نکلتا ہے اور آر ایف آئی ڈی کارڈ اسکین کرتا ہے، پارکنگ فیس فائند مائی سپاٹ والیٹ سے کاٹ لی جائے گی اور فیس کی کٹوتی کے بارے میں نوٹیفکیشن پاپ اپ ہوگا۔",
-                "صارف اپنے بٹوے کو بینک ٹرانسفر (ایزی پیسہ/جاز کیش) کے ذریعے دوبارہ چارج کرے گا اور پارکنگ مینیجر اپنی رقم بینک ٹرانسفر (ایزی پیسہ/جاز کیش) کے ذریعے نکالے گا۔"
-            ]
-        },
-        "FeaturesSpotlights" : {
-            "Title" : "اسپاٹ لائٹ کی خصوصیات",
-            "card-1" : {
-                "title" : "ان آؤٹ ٹائم کا ریکارڈ بنائیں",
-                "subtitle" : "ہمارا سسٹم آر ایف آئی ڈی استعمال کرکے موجودہ وقت کو ریکارڈ کرنے کے لیے اعلیٰ صلاحیتوں کی پیشکش کرتا ہے۔",
-                "overview" : "فائند مائی سپاٹ ایک طاقتور پلیٹ فارم پیش کرتا ہے جو ہمارے کلائنٹس کو کسی بھی پارکنگ کے داخلے کے وقت (ٹائم ان) اور ایگزٹ ٹائم (ٹائم آؤٹ) کو آسانی سے ٹریک کرنے کی اجازت دیتا ہے۔ جب آر ایف آئی ڈی کارڈ اسکین ہوتا ہے تو موجودہ (ان/آؤٹ) وقت ریکارڈ کیا جاتا ہے اور کل مدت کے ساتھ فائند مائی سپاٹ ایپلی کیشن میں دکھایا جاتا ہے۔ ایک پاپ اپ ہر بار ظاہر ہوتا ہے جب آر ایف آئی ڈی کارڈ کو اسکین کیا جاتا ہے اور ڈیٹا کو اپ ڈیٹ کیا جاتا ہے۔"
-            },
-            "card-2" : {
-                "title" : "وہیکل ٹریکنگ حاصل کریں (مستقبل کا ماڈیول)",
-                "subtitle" : "ہمارا سسٹم گاڑی کے موجودہ مقام کو چیک کرنے کے لیے جدید ترین ٹریکنگ پیش کرتا ہے۔",
-                "overview" : "فائند مائی سپاٹ ایک طاقتور پلیٹ فارم پیش کرتا ہے جو ہمارے کلائنٹس کو ایک چھوٹی چپ کا استعمال کرتے ہوئے آسانی سے گاڑی کے موجودہ مقام کو ٹریک کرنے کی اجازت دیتا ہے۔ چپ صارف کے انضمام کے بعد اس پر ایک چیکنگ ایس ایم ایس بھیجیں اور جواب کے لیے چپ موجودہ مقام بھیجتا ہے۔ اس کا پتہ لگانے کی حد تقریباً 4-5 کلومیٹر ہے۔"
-            }
-        },
-        "Find My SpotWallet" : {
-            "title" : "فائند مائی سپاٹ والیٹ دریافت کریں۔",
-            "description" : "فائند مائی سپاٹ نے مناسب فعالیت والے صارفین کے لیے اپنا پرس متعارف کرایا ہے۔ آر ایف آئی ڈی کی بنیاد پر تیز لین دین۔ کلائنٹ اور پارکنگ مینیجر دونوں کے کرداروں کے مطابق الگ الگ افعال ہوتے ہیں۔ کلائنٹ اپنے فائند مائی سپاٹ والیٹ کو جاز کیش کے ذریعے ری چارج کر سکتا ہے اور جب پارکنگ لاٹ سے باہر نکلتا ہے تو اس کے والیٹ سے خود بخود رقم کاٹ لی جائے گی۔ ادائیگی کلائنٹ کے فائند مائی سپاٹ والیٹ کے ذریعے کٹ جائے گی، جب وہ آر ایف آئی ڈی کارڈ کو اسکین کرے گا اور موجودہ پارکنگ مینیجر کے بٹوے میں شامل کرے گا۔ نیز پارکنگ مینیجر فائند مائی سپاٹ والیٹ کے ذریعے اپنے ذاتی بینک اکاؤنٹ میں رقم بھیج سکتا ہے۔"
-        },
-        "WhyUs" : {
-            "title" : "ہم کیوں",
-            "card-1" : {
-                "title" : "قابل اعتماد صارفین کا وسیع نیٹ ورک",
-                "overview" : "فائند مائی سپاٹ ٹیم اپنے صارفین کو بہترین معیار کی خدمات فراہم کرتی ہے تاکہ طویل عرصے تک ہماری خدمات کا استعمال کریں اور ہم سے جڑیں۔ ہمارے کسٹمر ہماری قابل اعتماد خدمات، معاونت اور معیاری مصنوعات کی وجہ سے ہم پر اعتماد کرتے ہیں۔"
-            },
-            "card-2" : {
-                "title" : "غیر معمولی کسٹمر سروس",
-                "overview" : "فائند مائی سپاٹ ماہرین کی ٹیم کی طرف سے ون آن ون کسٹمر سپورٹ پیش کرتا ہے، اس بات کو یقینی بناتے ہوئے کہ صارفین کو انتخاب، مواصلات اور آرڈر کرنے کے پورے عمل میں ذاتی نوعیت کی مدد حاصل ہو۔"
-            },
-            "card-3" : {
-                "title" : "آسان مواصلات کے لیے ہموار پلیٹ فارم",
-                "overview" : "فائند مائی سپاٹ کے استعمال میں آسان پیغام رسانی اور آرڈرنگ پلیٹ فارم کے ساتھ، ہمارے صارفین خریداری کے عمل اور الجھن کو کم کرنے کے ساتھ رابطے میں اور تازہ ترین رہ سکتے ہیں۔ ہماری ٹیم بہتر تعاون کے لیے ابہام کو کم کرنے کی کوشش کرتی ہے۔"
-            }
-        },
-        "Testimonials" : {
-            "title" : "فائند مائی سپاٹ ٹیم",
-            "card-1" : {
-                "name" : "رانا حمزہ نثار",
-                "review" : "فائند مائی سپاٹ ٹیم کا ممبر جو اس سسٹم کا آئیڈیا دیتا ہے۔ فلٹر ود ڈارٹ استعمال کر کے اینڈرائیڈ اور آئی او ایس کے لیے ایپلیکیشن تیار کریں۔"
-            },
-            "card-2" : {
-                "name" : "شراز علیل",
-                "review" : "فائند مائی سپاٹ ٹیم کا ممبر جو اس سسٹم کا آئیڈیا دیتا ہے۔ ریکٹ نوڈ کے ساتھ اور ایکسپریس جے ایس استعمال کرکے صارفین کے لیے ویب سائٹ تیار کریں۔"
-            },
-            "card-3" : {
-                "name" : "محمد فصی تاہر",
-                "review" : "فائند مائی سپاٹ ٹیم کا ممبر جو اس سسٹم کا آئیڈیا دیتا ہے۔ ایڈوب ایکس ڈی استعمال کرکے موبائل ایپلیکیشن کے لیے انٹرفیس (یو آئی / یو ایکس) ڈیزائن کریں۔"
-            }
-        },
-        "CallToAction" : {
-            "title1" : "ہماری سبسکرائب کریں۔",
-            "title2" : "ہفتہ وار نیوز لیٹر",
-            "button" : "سبسکرائب"
-        }
     }
 }
-
