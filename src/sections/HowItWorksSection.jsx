@@ -4,9 +4,15 @@ import { LangContext } from '../LangContext';
 import * as Text from "../Text.json";
 
 const HowItWorksSection = () => {
+    const {language} = useContext(LangContext);
     const showText = () =>{
-        return Text.eng.HowItWorksSection
+        if(language){
+        return Text.eng.FeatureSection
     }
+    else{
+        return Text.urd.FeatureSection
+    }
+};
     return (
         <section className="bg-white mt-20 text-primary-txt">
             <div className="container max-w-xl p-6 py-0 mx-auto space-y-16 text-gray-400 lg:px-8 lg:max-w-7xl">

@@ -9,7 +9,7 @@ export default {
       colors: {
 
         'secondary-btn': '#0860C6',
-        'toggle-checked' : '#ECB11D',
+        'toggle-checked' : '#0425BF',
         'primary-txt' : '#323232',
         'secondary-txt' : '#323232',
         'shade' : '#ECB11D',

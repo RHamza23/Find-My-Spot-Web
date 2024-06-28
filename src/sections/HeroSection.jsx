@@ -9,8 +9,13 @@ const HeroSection = () => {
     const [showExpandedText, setShowExpandedText] = useState(false);
 
     const showText = () => {
+        if(language){
         return Text.eng.HeroSection;
-    };
+    }
+    else{
+        return Text.urd.HeroSection;
+    }
+};
 
     const toggleExpandedText = () => {
         setShowExpandedText(!showExpandedText);
