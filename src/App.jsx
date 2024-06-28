@@ -15,8 +15,8 @@ import Error from './sections/Error';
 import FindmyspotMap from './sections/FindmyspotMap';
 import Clients from './sections/Clients';
 import ParkingManager from './sections/ParkingManager';
-import RfidCards from './sections/RfidCards';
-import RfidScanners from './sections/RfidScanners';
+import NFCCards from './sections/NFCCards';
+import NFCScanners from './sections/NFCScanners';
 import VehicleTheft from './sections/VehicleTheft';
 
 
@@ -64,12 +64,12 @@ function App() {
             element={<ProtectedRoute element={ParkingManager} isLoggedIn={isLoggedIn} />}
           />
           <Route
-            path="/rfid-cards"
-            element={<ProtectedRoute element={RfidCards} isLoggedIn={isLoggedIn} />}
+            path="/NFC-cards"
+            element={<ProtectedRoute element={NFCCards} isLoggedIn={isLoggedIn} />}
           />
           <Route
-            path="/rfid-scanners"
-            element={<ProtectedRoute element={RfidScanners} isLoggedIn={isLoggedIn} />}
+            path="/NFC-scanners"
+            element={<ProtectedRoute element={NFCScanners} isLoggedIn={isLoggedIn} />}
           />
           <Route
             path="/vehicletheft"
