@@ -13,7 +13,13 @@ import * as Text from "../Text.json";
 
 const List = () => {
     const showText = () =>{
-        return Text.eng.HowItWorksSection['list-text']
+        const {language} = useContext (LangContext);
+        if(language){
+            return Text.eng.HowItWorksSection['list-text']
+        }
+        else{
+            return Text.urd.HowItWorksSection['list-text']
+        }
     }
     return (
         <div>

@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import * as Text from "../Text.json";
+import { LangContext } from '../LangContext';
 
 const CallToAction = () => {
 
@@ -27,9 +28,14 @@ const CallToAction = () => {
       });
     setInput("")
   };
-
+  const { language } = useContext(LangContext);
   const showText = () => {
-    return Text.eng.CallToAction
+    if(language){
+      return Text.eng.CallToAction;
+  }
+  else{
+      return Text.urd.CallToAction;
+  }
   }
 
   return (
