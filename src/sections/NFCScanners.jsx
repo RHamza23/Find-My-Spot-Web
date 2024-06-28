@@ -2,7 +2,7 @@ import { collection, getDocs, doc, updateDoc } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 
-const RfidScanners = () => {
+const NFCScanners = () => {
 
   const [scannerData, setScannerData] = useState([]);
   useEffect(() => {
@@ -56,7 +56,7 @@ const RfidScanners = () => {
   return (
     <>
       <div className="container p-2 mx-auto sm:p-4 text-gray-800">
-        <h1 className="text-center mb-4 text-2xl font-semibold leading-tight">RFID Scanners</h1>
+        <h1 className="text-center mb-4 text-2xl font-semibold leading-tight">NFC Scanners</h1>
         <div className="overflow-x-auto">
           <table className="min-w-full text-xs border-2 border-blue-300">
             <colgroup>
@@ -135,4 +135,4 @@ const RfidScanners = () => {
   );
 };
 
-export default RfidScanners;
+export default NFCScanners;
