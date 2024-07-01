@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import './assets/fonts/fonts.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
+import { LangProvider } from './LangContext';
 import Navbar from './sections/Navbar';
 import Home from './sections/Home';
 import Contact from './sections/Contact';
@@ -18,7 +18,6 @@ import ParkingManager from './sections/ParkingManager';
 import NFCCards from './sections/NFCCards';
 import NFCScanners from './sections/NFCScanners';
 import VehicleTheft from './sections/VehicleTheft';
-
 
 const ProtectedRoute = ({ element: Component, isLoggedIn }) => {
   return isLoggedIn ? (
@@ -39,47 +38,27 @@ function App() {
   }, []);
 
   return (
-    <div className="overflow-hidden">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/map" element={<FindmyspotMap />} />
-
-          <Route
-            path="/admin-login"
-            element={<AdminLogin setIsLoggedIn={setIsLoggedIn} />}
-          />
-          <Route
-            path="/admin-dashboard"
-            element={<ProtectedRoute element={AdminDashboard} isLoggedIn={isLoggedIn} />} 
-          />
-          <Route
-            path="/clients"
-            element={<ProtectedRoute element={Clients} isLoggedIn={isLoggedIn} />}
-          />
-          <Route
-            path="/parkingmanagers"
-            element={<ProtectedRoute element={ParkingManager} isLoggedIn={isLoggedIn} />}
-          />
-          <Route
-            path="/NFC-cards"
-            element={<ProtectedRoute element={NFCCards} isLoggedIn={isLoggedIn} />}
-          />
-          <Route
-            path="/NFC-scanners"
-            element={<ProtectedRoute element={NFCScanners} isLoggedIn={isLoggedIn} />}
-          />
-          <Route
-            path="/vehicletheft"
-            element={<ProtectedRoute element={VehicleTheft} isLoggedIn={isLoggedIn} />}
-          />
-          <Route path="*" element={<Error />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <LangProvider>
+      <div className="overflow-hidden">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/map" element={<FindmyspotMap />} />
+            <Route path="/admin-login" element={<AdminLogin setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/admin-dashboard" element={<ProtectedRoute element={AdminDashboard} isLoggedIn={isLoggedIn} />} />
+            <Route path="/clients" element={<ProtectedRoute element={Clients} isLoggedIn={isLoggedIn} />} />
+            <Route path="/parkingmanagers" element={<ProtectedRoute element={ParkingManager} isLoggedIn={isLoggedIn} />} />
+            <Route path="/NFC-cards" element={<ProtectedRoute element={NFCCards} isLoggedIn={isLoggedIn} />} />
+            <Route path="/NFC-scanners" element={<ProtectedRoute element={NFCScanners} isLoggedIn={isLoggedIn} />} />
+            <Route path="/vehicletheft" element={<ProtectedRoute element={VehicleTheft} isLoggedIn={isLoggedIn} />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
+    </LangProvider>
   );
 }
 
