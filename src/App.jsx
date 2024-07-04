@@ -18,6 +18,7 @@ import ParkingManager from './sections/ParkingManager';
 import NFCCards from './sections/NFCCards';
 import NFCScanners from './sections/NFCScanners';
 import VehicleTheft from './sections/VehicleTheft';
+import AdminSignUp from './sections/AdminSignup';
 
 const ProtectedRoute = ({ element: Component, isLoggedIn }) => {
   return isLoggedIn ? (
@@ -46,6 +47,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/map" element={<FindmyspotMap />} />
+            <Route path='/admin-signup' element={<AdminSignUp setIsLoggedIn={setIsLoggedIn}/>} />
             <Route path="/admin-login" element={<AdminLogin setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/admin-dashboard" element={<ProtectedRoute element={AdminDashboard} isLoggedIn={isLoggedIn} />} />
             <Route path="/clients" element={<ProtectedRoute element={Clients} isLoggedIn={isLoggedIn} />} />
