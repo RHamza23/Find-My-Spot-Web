@@ -37,7 +37,6 @@ const ParkingManager = () => {
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">I.D #</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Name</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Email</th>
-                <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Password</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Phone</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Location</th>
               </tr>
@@ -54,9 +53,6 @@ const ParkingManager = () => {
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
                   {parkingmanager?.Email}
-                </td>
-                <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {parkingmanager?.Password}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
                   {parkingmanager?.Phone}

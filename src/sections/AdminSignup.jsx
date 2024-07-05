@@ -1,26 +1,56 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { doc, setDoc } from 'firebase/firestore';
 import 'animate.css';
 import loginImage from '../assets/img/30.jpg';
+import { auth, db } from '../firebase'; // Ensure this path is correct
 
-const AdminLogin = ({ setIsLoggedIn }) => {
+const AdminSignUp = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const navigate = useNavigate();
 
-  const handleEmailChange = (e) => setEmail(e.target.value);
-  const handlePasswordChange = (e) => setPassword(e.target.value);
-  const handleTogglePasswordVisibility = () => setIsPasswordVisible(!isPasswordVisible);
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+  };
+
+  const handleTogglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (password !== confirmPassword) {
+      setErrorMessage('Passwords do not match');
+      return;
+    }
+
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      setIsLoggedIn(true); // Ensure this is a function
+      // Create user with Firebase Authentication
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      // Save user to Firestore in 'admins' collection
+      await setDoc(doc(db, 'admins', user.uid), {
+        email: user.email,
+        createdAt: new Date().toISOString()
+      });
+
+      // Set user logged in and navigate
+      setIsLoggedIn(true);
       navigate('/admin-dashboard');
     } catch (error) {
       setErrorMessage(error.message);
@@ -32,7 +62,7 @@ const AdminLogin = ({ setIsLoggedIn }) => {
       <div className="flex w-full min-h-[90vh] bg-white rounded-lg shadow-lg overflow-hidden mx-4">
         <div className="w-1/2 p-8 flex-grow flex items-center justify-center">
           <div className="w-full">
-            <h2 className="text-3xl font-bold mb-4 text-center text-blue-500">LOG IN</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center text-blue-500">SIGN UP</h2>
             {errorMessage && <p className="text-red-500 mb-4 text-center">{errorMessage}</p>}
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -75,20 +105,33 @@ const AdminLogin = ({ setIsLoggedIn }) => {
                   </div>
                 </div>
               </div>
+              <div className="mb-6">
+                <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="confirmPassword">
+                  Confirm Password
+                </label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  value={confirmPassword}
+                  onChange={handleConfirmPasswordChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500"
+                  placeholder="Confirm your password"
+                />
+              </div>
               <div className="flex items-center justify-center">
                 <button
                   type="submit"
                   className="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline animate__animated animate__bounce"
                 >
-                  Login
+                  Sign Up
                 </button>
               </div>
               <div className="mt-4 text-center">
                 <Link
-                  to="/admin-signup"
+                  to="/admin-login"
                   className="text-blue-500 text-sm font-semibold hover:underline"
                 >
-                  Don’t have an account? Create now.
+                  Already have an account? Log In.
                 </Link>
               </div>
             </form>
@@ -98,7 +141,7 @@ const AdminLogin = ({ setIsLoggedIn }) => {
           <div
             className="absolute rounded-lg shadow-lg overflow-hidden inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url(${loginImage})`, // Corrected syntax
+              backgroundImage: `url(${loginImage})`,
               opacity: 0.6,
             }}
           ></div>
@@ -108,4 +151,4 @@ const AdminLogin = ({ setIsLoggedIn }) => {
   );
 };
 
-export default AdminLogin;
+export default AdminSignUp;

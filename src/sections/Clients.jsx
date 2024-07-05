@@ -46,7 +46,6 @@ const Clients = () => {
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">I.D #</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Name</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Email</th>
-                <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Password</th>
                 <th className="py-3 px-6 text-sm font-bold text-gray-900 uppercase tracking-wider">Phone</th>
               </tr>
             </thead>
@@ -62,9 +61,6 @@ const Clients = () => {
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
                   {client?.Email}
-                </td>
-                <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
-                  {client?.Password}
                 </td>
                 <td className="py-3 px-6 tracking-wider text-sm font-medium text-gray-700">
                   {client?.Phone}
