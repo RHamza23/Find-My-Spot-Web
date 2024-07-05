@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ParkingManager from "./ParkingManager";
 import Clients from "./Clients";
-import RfidCards from "./RfidCards";
-import RfidScanners from "./RfidScanners";
+import NFCCards from "./NFCCards";
+import NFCScanners from "./NFCScanners";
 import VehicleTheft from "./VehicleTheft";
 
 const AdminDashboard = () => {
@@ -40,7 +40,7 @@ const AdminDashboard = () => {
               id="Cards"
               className="px-10 py-4 font-semibold rounded-md bg-gray-800 text-white"
             >
-              RFID Cards
+              NFC Cards
             </button>
             <button
               type="button"
@@ -48,7 +48,7 @@ const AdminDashboard = () => {
               id="Scanners"
               className="px-8 py-4 font-semibold rounded-md bg-gray-800 text-white"
             >
-              RFID Scanners
+              NFC Scanners
             </button>
             <button
               type="button"
@@ -66,9 +66,9 @@ const AdminDashboard = () => {
             : tab === "Parking"
             ? <ParkingManager />
             : tab === "Cards"
-            ? <RfidCards />
+            ? <NFCCards />
             : tab === "Scanners"
-            ? <RfidScanners />
+            ? <NFCScanners />
             : <VehicleTheft />}
         </div>
     </>

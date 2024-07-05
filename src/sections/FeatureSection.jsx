@@ -10,8 +10,13 @@ import * as Text from "../Text.json";
 const FeatureSection = () => {
     const {language} = useContext(LangContext);
     const showText = () =>{
+        if(language){
         return Text.eng.FeatureSection
     }
+    else{
+        return Text.urd.FeatureSection
+    }
+};
     return (
         <section className="mt-20 mx-8 md:mt-20 md:m-8 bg-white text-primary-txt">
             <div className="container mx-auto grid justify-center gap-28 md:px-32 md:gap-12 sm:grid-cols-2 lg:grid-cols-3">

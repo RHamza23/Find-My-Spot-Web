@@ -26,7 +26,7 @@ const WhyUs = () => {
                         <WhyUsCard
                             animation="fade-right"
                             icon={icon1}
-                            title={Text.eng.WhyUs['card-1'].title}
+                            title={Text.eng .WhyUs['card-1'].title}
                             overview={Text.eng.WhyUs['card-1'].overview}
                             showDetails={showDetails}
                         />

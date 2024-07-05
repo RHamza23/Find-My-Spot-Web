@@ -8,8 +8,13 @@ import * as Text from "../Text.json";
 const FeaturesSpotlights = () => {
     const {language} = useContext(LangContext);
     const showText = () =>{
-        return Text.eng.FeaturesSpotlights
-    }
+        if(language){
+            return Text.eng.FeaturesSpotlights
+        }
+        else{
+            return Text.urd.FeaturesSpotlights
+        }
+    };
     return (
         <section className=" bgbackground-lgtblue pt-20">
             <div className="container max-w-xl p-6 py-0 mx-auto space-y-10 text-gray-400 lg:px-8 lg:max-w-7xl">

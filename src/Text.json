@@ -8,24 +8,24 @@
         },
         "FeatureSection" : {
             "Title" : [
-                "RFID Scanning",
+                "NFC Scanning",
                 "Authentic User",
                 "Tracking Chips"
             ],
             "description" : [
-                "With the help of help of RFID card user's can save time while exit the parking also fee will aitomatically deduct with App Wallet.",
-                "Each User can register one vehicle on single RFID card and without RFID card the entry in any parking place is invalid.",
+                "With the help of help of NFC card user's can save time while exit the parking also fee will aitomatically deduct with App Wallet.",
+                "Each User can register one vehicle on single NFC card and without NFC card the entry in any parking place is invalid.",
                 "User can track the vehicle at any time with the help of tracking chip. In future we can start working on this module."
             ]
         },
         "HowItWorksSection" : {
             "Title" : "How it works",
-            "sub-title" : "RFID Card and Scanner are main source for this system. With these we can track and secure our vehicle also save our time for parking crowd.",
+            "sub-title" : "NFC Card and Scanner are main source for this system. With these we can track and secure our vehicle also save our time for parking crowd.",
             "list-text" : [
-                "User will create his account and sign in by providing right credentials to Find My Spot App. After that User ordered the RFID card for the vehicle.",
+                "User will create his account and sign in by providing right credentials to Find My Spot App. After that User ordered the NFC card for the vehicle.",
                 "On the other side, Parking Manager also create his account and sign in to the Find My Spot App. After that he ordered the Scanner for scanning.",
-                "User enter in parking lot and scan the RFID card the Parking details will update which include the Time In/Out with location.",
-                "User exit the parking lot and scan RFID card, Parking Fee will deduct from Find My Spot wallet and notification pop-up about fee deduction.",
+                "User enter in parking lot and scan the NFC card the Parking details will update which include the Time In/Out with location.",
+                "User exit the parking lot and scan NFC card, Parking Fee will deduct from Find My Spot wallet and notification pop-up about fee deduction.",
                 "User will reharge his wallet through Bank transfer (Easypaisa/Jazzcash) and Parking Manager will withdraw his amount through bank transfer (Easypaisa/Jazzcash)."
             ]
         },
@@ -33,8 +33,8 @@
             "Title" : "Spotlight Features",
             "card-1" : {
                 "title" : "Make Record of In-Out Time",
-                "subtitle" : "Our System Offers Advanced Capabilities to Record the Current Time by using RFID.",
-                "overview" : "Find My Spot offers a powerful platform that allows our Clients to easily track the Entrance time(Time-In) and Exit time(Time-Out) of any parking. When the RFID card is Scan the current (In/Out) time is recorded and shown in Find My Spot Application with Total duration. A pop-up appear everytime when RFID card is scanned and data will be updated."
+                "subtitle" : "Our System Offers Advanced Capabilities to Record the Current Time by using NFC.",
+                "overview" : "Find My Spot offers a powerful platform that allows our Clients to easily track the Entrance time(Time-In) and Exit time(Time-Out) of any parking. When the NFC card is Scan the current (In/Out) time is recorded and shown in Find My Spot Application with Total duration. A pop-up appear everytime when NFC card is scanned and data will be updated."
             },
             "card-2" : {
                 "title" : "Get Vehicle Tracking (Future Module)",
@@ -44,7 +44,7 @@
         },
         "findmyspotWallet" : {
             "title" : "Discover Find My Spot Wallet",
-            "description" : "Find My Spot introduce its Wallet for users with proper functionalities. Fast transaction based on RFID. Client and Parking Manager both have seperate functionalities according to the roles. Client can recharge its Find My Spot wallet through jazz cash and when exits the parking lot money will automatically be deducted through its wallet. The payment will deduct through the Client Find My Spot wallet, when he scans the RFID card and added to the wallet of current Parking Manager. Also Parking Manager can send money to his personal bank account through Find My Spot wallet."
+            "description" : "Find My Spot introduce its Wallet for users with proper functionalities. Fast transaction based on NFC. Client and Parking Manager both have seperate functionalities according to the roles. Client can recharge its Find My Spot wallet through jazz cash and when exits the parking lot money will automatically be deducted through its wallet. The payment will deduct through the Client Find My Spot wallet, when he scans the NFC card and added to the wallet of current Parking Manager. Also Parking Manager can send money to his personal bank account through Find My Spot wallet."
         },
         "WhyUs" : {
             "title" : "Why Us",
@@ -69,22 +69,112 @@
             "title" : "Find My Spot Team",
             "card-1" : {
                 "name" : "Rana Hamza Nisar",
-                "review" : "The member of Find My Spot team who gives the idea of this system. Develop the Application for Android and IOS by using Flutter with Dart."
+                "review" : "The member of Find My Spot team who gives the idea of this system. Develop the Website for users by using React with Node and Express JS."
             },
             "card-2" : {
                 "name" : "Sheraz Ali",
-                "review" : "The member of Find My Spot team who gives the idea of this system. Develop the Website for users by using React with Node and Express JS."
+                "review" : "The member of Find My Spot team who gives the idea of this system. Develop the Client Application for Android and IOS by using Flutter with Dart."
             },
             "card-3" : {
                 "name" : "Muhammad Faseeh Tahir",
-                "review" : "The member of Find My Spot team who gives the idea of this system. Design the interface (UI/UX) for the mobile Application by using Adobe XD."
+                "review" : "The member of Find My Spot team who gives the idea of this system. Develop the Manager Application & NFC reader for Android and IOS by using Flutter with Dart"
             }
         },
         "CallToAction" : {
             "title1" : "Subscribe To Our",
             "title2" : "Weekly Newsletter",
-            "button" : "Subscribe"
+            "button" : "Subscribe",
+            "details":"Detailed information about Card 1."
         }
 
+    },
+
+    "urd": {
+        "HeroSection": {
+            "Title": "خودکار پارکنگ ٹکٹ مینجمنٹ سسٹم",
+            "Sub-Title": "ہم اپنے صارفین کو پارکنگ کے ٹکٹوں کا انتظام کرنے کا آسان طریقہ فراہم کرتے ہیں۔ اسی طرح، یہ سسٹم صارفین کے لیے اضافی خصوصیات فراہم کرتا ہے۔ سسٹم کا بنیادی مقصد دورانیے، گاڑیوں، پارکنگ سلاٹس، صارفین، اور پارکنگ فیس کی تفصیلات کو ان کے موبائل فونز پر منظم کرنا ہے۔",
+            "Call-to-Action": "مزید پڑھیں",
+            "Expanded-Text": "اپنی بنیادی فعالیت کے علاوہ، ہمارا سسٹم بنیادی ٹکٹ مینجمنٹ سے آگے بڑھتا ہے۔ یہ صارف کے اطمینان اور آپریشنل کارکردگی کو بڑھانے کے لیے جدید خصوصیات کو شامل کرتا ہے۔ ان اضافی صلاحیتوں میں پارکنگ کی دستیابی پر حقیقی وقت کی اپ ڈیٹس، سروس کی بہتر فعالیت کے لیے ذاتی کسٹمر پروفائلز، اور پارکنگ کے دورانیے اور گاڑی کی قسم کے مطابق خودکار فیس کیلکولیشن شامل ہیں۔ ان خصوصیات کا فائدہ اٹھا کر، ہمارا سسٹم نہ صرف پارکنگ مینجمنٹ کو آسان بناتا ہے بلکہ ایک جامع حل فراہم کرنے کا بھی ارادہ رکھتا ہے جو انفرادی صارفین اور کاروبار دونوں کی مختلف ضروریات کو پورا کرتا ہے۔"
+        },
+        "FeatureSection": {
+            "Title": [
+                "آر ایف آئی ڈی اسکیننگ",
+                "مستند صارف",
+                "ٹریکنگ چپس"
+            ],
+            "description": [
+                "آر ایف آئی ڈی کارڈ کی مدد سے صارفین پارکنگ سے باہر نکلتے وقت وقت بچا سکتے ہیں اور فیس خودبخود ایپ والیٹ سے کٹ جائے گی۔",
+                "ہر صارف ایک آر ایف آئی ڈی کارڈ پر ایک گاڑی رجسٹر کر سکتا ہے اور بغیر آر ایف آئی ڈی کارڈ کے کسی بھی پارکنگ جگہ میں داخلہ غیر معتبر ہے۔",
+                "صارف کسی بھی وقت ٹریکنگ چپ کی مدد سے اپنی گاڑی کو ٹریک کر سکتا ہے۔ مستقبل میں ہم اس ماڈیول پر کام شروع کر سکتے ہیں۔"
+            ]
+        },
+        "HowItWorksSection": {
+            "Title": "یہ کیسے کام کرتا ہے",
+            "sub-title": "آر ایف آئی ڈی کارڈ اور اسکینر اس سسٹم کے بنیادی ذرائع ہیں۔ ان کے ساتھ، ہم اپنی گاڑی کو ٹریک اور محفوظ کر سکتے ہیں اور پارکنگ ہجوم کے وقت کو بچا سکتے ہیں۔",
+            "list-text": [
+                "صارف اپنا اکاؤنٹ بنائے گا اور درست شناختی تفصیلات فراہم کر کے Find My Spot ایپ میں سائن ان کرے گا۔ اس کے بعد، صارف گاڑی کے لیے آر ایف آئی ڈی کارڈ کا آرڈر دے گا۔",
+                "دوسری طرف، پارکنگ منیجر بھی اپنا اکاؤنٹ بناتا ہے اور Find My Spot ایپ میں سائن ان کرتا ہے۔ اس کے بعد، وہ اسکیننگ کے لیے اسکینر کا آرڈر دیتا ہے۔",
+                "صارف پارکنگ لاٹ میں داخل ہوتا ہے اور آر ایف آئی ڈی کارڈ کو اسکین کرتا ہے۔ پارکنگ کی تفصیلات اپ ڈیٹ ہو جائیں گی، جن میں وقت داخلہ/خروج کے ساتھ مقام شامل ہوگا۔",
+                "صارف پارکنگ لاٹ سے باہر نکلتا ہے اور آر ایف آئی ڈی کارڈ کو اسکین کرتا ہے۔ پارکنگ فیس Find My Spot والیٹ سے کٹ جائے گی اور فیس کی کٹوتی کے بارے میں نوٹیفکیشن پاپ اپ ہوگا۔",
+                "صارف اپنے والیٹ کو بینک ٹرانسفر (ایزی پیسہ/جاز کیش) کے ذریعے دوبارہ چارج کرے گا اور پارکنگ منیجر بینک ٹرانسفر (ایزی پیسہ/جاز کیش) کے ذریعے اپنی رقم نکالے گا۔"
+            ]
+        },
+        "FeaturesSpotlights": {
+            "Title": "نمایاں خصوصیات",
+            "card-1": {
+                "title": "داخلہ/خروج کا وقت ریکارڈ کریں",
+                "subtitle": "ہمارا سسٹم آر ایف آئی ڈی کا استعمال کرتے ہوئے موجودہ وقت ریکارڈ کرنے کی جدید صلاحیتیں فراہم کرتا ہے۔",
+                "overview": "Find My Spot ایک طاقتور پلیٹ فارم پیش کرتا ہے جو ہمارے کلائنٹس کو کسی بھی پارکنگ کے داخلہ وقت (وقت داخلہ) اور خروج وقت (وقت خروج) کو آسانی سے ٹریک کرنے کی اجازت دیتا ہے۔ جب آر ایف آئی ڈی کارڈ اسکین کیا جاتا ہے، موجودہ (داخلہ/خروج) وقت ریکارڈ کیا جاتا ہے اور Find My Spot ایپلیکیشن میں کل دورانیے کے ساتھ دکھایا جاتا ہے۔ ہر بار جب آر ایف آئی ڈی کارڈ اسکین کیا جاتا ہے، ایک پاپ اپ ظاہر ہوتا ہے اور ڈیٹا اپ ڈیٹ ہو جاتا ہے۔"
+            },
+            "card-2": {
+                "title": "گاڑی کی ٹریکنگ حاصل کریں (مستقبل کا ماڈیول)",
+                "subtitle": "ہمارا سسٹم گاڑی کے موجودہ مقام کی جانچ کرنے کے لیے جدید ٹریکنگ فراہم کرتا ہے۔",
+                "overview": "Find My Spot ایک طاقتور پلیٹ فارم پیش کرتا ہے جو ہمارے کلائنٹس کو ایک چھوٹے چپ کا استعمال کرتے ہوئے گاڑی کے موجودہ مقام کو آسانی سے ٹریک کرنے کی اجازت دیتا ہے۔ چپ کی انضمام کے بعد، صارف چیکنگ ایس ایم ایس بھیجتا ہے اور جواب میں، چپ موجودہ مقام بھیجتا ہے۔ اس کی شناختی رینج تقریباً 4-5 کلومیٹر ہے۔"
+            }
+        },
+        "findmyspotWallet": {
+            "title": "Find My Spot والیٹ کو دریافت کریں",
+            "description": "Find My Spot اپنے صارفین کے لیے مناسب فعالیتوں کے ساتھ اپنا والیٹ متعارف کراتا ہے۔ آر ایف آئی ڈی پر مبنی تیز تر لین دین۔ کلائنٹ اور پارکنگ منیجر دونوں کے پاس اپنے کرداروں کے مطابق الگ الگ فعالیتیں ہیں۔ کلائنٹ جاز کیش کے ذریعے اپنے Find My Spot والیٹ کو دوبارہ چارج کر سکتا ہے، اور جب وہ پارکنگ لاٹ سے نکلتا ہے تو پیسے خودبخود اس کے والیٹ سے کٹ جائیں گے۔ کلائنٹ کا Find My Spot والیٹ اس وقت پیسہ کٹوتی کرتا ہے جب وہ آر ایف آئی ڈی کارڈ کو اسکین کرتا ہے اور موجودہ پارکنگ منیجر کے والیٹ میں شامل کیا جاتا ہے۔ پارکنگ منیجر اپنے ذاتی بینک اکاؤنٹ میں بھی پیسے بھیج سکتا ہے Find My Spot والیٹ کے ذریعے۔"
+        },
+        "WhyUs": {
+            "title": "ہم کیوں",
+            "card-1": {
+                "title": "قابل اعتماد صارفین کا وسیع نیٹ ورک",
+                "details": "کارڈ 1 کے بارے میں تفصیلی معلومات۔",
+                "overview": "Find My Spot ٹیم اپنے صارفین کو بہترین معیار کی خدمات فراہم کرتی ہے تاکہ وہ طویل عرصے تک ہماری خدمات استعمال کریں اور ہم سے جڑے رہیں۔ ہمارے صارفین ہم پر اعتماد کرتے ہیں کیونکہ ہماری قابل اعتماد خدمات، حمایت، اور معیاری مصنوعات کی وجہ سے۔"
+            },
+            "card-2": {
+                "title": "شاندار کسٹمر سروس",
+                "details": "کارڈ 1 کے بارے میں تفصیلی معلومات۔",
+                "overview": "Find My Spot ایک ٹیم کے ماہرین کی جانب سے ون آن ون کسٹمر سپورٹ فراہم کرتا ہے، جس سے صارفین کو پوری انتخاب، بات چیت، اور آرڈرنگ کے عمل میں ذاتی مدد ملتی ہے۔"
+            },
+            "card-3": {
+                "title": "آسان مواصلت کے لیے مربوط پلیٹ فارم",
+                "details": "کارڈ 1 کے بارے میں تفصیلی معلومات۔",
+                "overview": "Find My Spot کے استعمال میں آسان پیغام رسانی اور آرڈرنگ پلیٹ فارم کے ساتھ، ہمارے صارفین خریداری کے عمل میں تازہ ترین رہ سکتے ہیں اور الجھن کو کم کر سکتے ہیں۔ ہماری ٹیم بہتر حمایت کے لیے ابہامات کو کم کرنے کی کوشش کرتی ہے۔"
+            },
+            "moreText": "شیر از"
+        },
+        "Testimonials": {
+            "title": "Find My Spot ٹیم",
+            "card-1": {
+                "name": "رانا حمزہ نثار",
+                "review": "Find My Spot ٹیم کے رکن جنہوں نے اس سسٹم کا آئیڈیا دیا۔ فلٹر کے ساتھ ڈارٹ کا استعمال کرتے ہوئے اینڈرائیڈ اور آئی او ایس کے لیے ایپلیکیشن تیار کی۔"
+            },
+            "card-2": {
+                "name": "شیر از علی",
+                "review": "Find My Spot ٹیم کے رکن جنہوں نے اس سسٹم کا آئیڈیا دیا۔ React کا استعمال کرتے ہوئے ویب سائٹ تیار کی۔"
+            },
+            "card-3": {
+                "name": "محمد فسیح طاہر",
+                "review": "Find My Spot ٹیم کے رکن جنہوں نے اس سسٹم کا آئیڈیا دیا۔ ایڈوب ایکس ڈی کا استعمال کرتے ہوئے موبائل ایپلیکیشن کے لیے انٹرفیس (UI/UX) ڈیزائن کیا۔"
+            }
+        },
+        "CallToAction": {
+            "title1": "ہماری",
+            "title2": "ہفتہ وار نیوز لیٹر",
+            "button": "سبسکرائب کریں",
+            "details": "کارڈ 1 کے بارے میں تفصیلی معلومات۔"
+        }
     }
 }
